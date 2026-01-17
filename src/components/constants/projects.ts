@@ -13,7 +13,7 @@ export interface Project {
     detail: string;
   }[];
   links: {
-    type: "github" | "service" | "notion" | "video";
+    type: "github" | "service" | "notion" | "video" | "blog";
     label: string;
     url: string;
   }[];
@@ -78,6 +78,11 @@ export const PROJECTS: Project[] = [
         label: "Frontend Repo",
         url: "https://github.com/qjatjr29/beomstory-front",
       },
+      {
+        type: "blog",
+        label: "블로그 글",
+        url: "https://beomsic.tistory.com/category/%F0%9F%A7%91%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/beomstory",
+      },
     ],
     colors: {
       from: "rgb(198, 198, 199)",
@@ -123,6 +128,11 @@ export const PROJECTS: Project[] = [
         type: "github",
         label: "Github",
         url: "https://github.com/dreamcastle13579/server",
+      },
+      {
+        type: "service",
+        label: "서비스 소개",
+        url: "https://bside.best/projects/detail/P250219095755",
       },
     ],
     colors: {
