@@ -5,7 +5,10 @@
 
 ## 🔗 Link
 
-> [링크](https://portfolio-taupe-delta-50.vercel.app/)
+### [포트폴리오 링크](https://portfolio-taupe-delta-50.vercel.app/)
+
+> [피그마 링크](https://www.figma.com/design/uXqkNfxxPXjiqyeG5WCc5I/Portfolio?node-id=0-1&p=f&t=JZKOIDkciCstqVp8-0)
+> [피그마 프로토타입 링크](https://www.figma.com/proto/uXqkNfxxPXjiqyeG5WCc5I/Portfolio?node-id=0-1&t=JZKOIDkciCstqVp8-1)
 
 ---
 
