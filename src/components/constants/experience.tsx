@@ -28,7 +28,7 @@ export interface ExperienceItem {
 export const EXPERIENCES: ExperienceItem[] = [
   {
     id: "daangn",
-    company: "당근",
+    company: "당근 마켓",
     logo: karrotImage,
     role: "데이터가치화 팀, Software Engineer (Backend 인턴)",
     period: "2024.07 - 2024.10",
@@ -36,7 +36,7 @@ export const EXPERIENCES: ExperienceItem[] = [
       {
         title: "KarrotMetrics Explorer 서비스 유지보수 및 백엔드 개발",
         content:
-          "FastAPI 기반의 사내 지표 시각화 대시보드 유지보수 및 구성원 요청 사항 대응",
+          "FastAPI 기반의 사내 지표 시각화 대시보드 유지보수 및 요청 사항 대응",
         icon: Plus,
         iconBg: "bg-blue-50",
         iconColor: "#155DFC",
