@@ -9,7 +9,7 @@ import {
 
 export interface Skill {
   name: string;
-  isMain?: boolean; 
+  isMain?: boolean;
 }
 
 export interface SkillCategory {
@@ -30,7 +30,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Spring Boot", isMain: true },
       { name: "TypeScript" },
       { name: "Node.js" },
-      { name: "Nestjs" },
+      { name: "NestJS" },
       { name: "Junit5" },
       { name: "Python" },
       { name: "FastAPI" },
@@ -67,7 +67,6 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Kafka" },
       { name: "Docker" },
       { name: "Jenkins" },
-      { name: "AWS CodeDeploy" },
       { name: "Github Actions", isMain: true },
     ],
   },
@@ -77,9 +76,9 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     icon: MessageSquare,
     skills: [
       { name: "Git", isMain: true },
-      { name: "Jira" },
       { name: "Slack" },
       { name: "Notion" },
+      { name: "Jira" },
     ],
   },
 ];
