@@ -13,7 +13,7 @@ export interface EducationItem {
 export const EDUCATION_DATA: EducationItem[] = [
   {
     id: "boostcamp",
-    period: "2025.06 ~ 현재",
+    period: "2025.06 ~ 2026.02",
     title: "네이버 부스트캠프 웹·모바일 10기 웹 풀스택",
     type: "bootcamp",
     gradient: { from: "rgb(0, 201, 80)", to: "rgb(0, 166, 62)" },
