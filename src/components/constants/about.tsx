@@ -20,9 +20,9 @@ export const ABOUT_ITEMS: AboutItem[] = [
     iconColor: "#155DFC",
     iconBgColor: "bg-[#dbeafe]",
     content: {
-      prefix: "항상 ",
-      highlight: "최신 기술에 관심을",
-      suffix: " 가지며 이를 프로젝트에 적용하며 흥미를 느낍니다.",
+      // prefix: "항상 ",
+      highlight: "스스로 납득할 수 있는 코드",
+      suffix: " 를 쓰기 위해 고민합니다.",
       highlightColor: "text-[#155dfc]",
     },
   },

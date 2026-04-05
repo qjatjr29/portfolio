@@ -1,5 +1,5 @@
 import { Github, ExternalLink, PlayCircle, FileText } from "lucide-react";
-import type { Project } from "../constants/projects";
+import type { Project, ProjectIcon } from "../constants/projects";
 
 const LinkIcon = ({ type }: { type: string }) => {
   switch (type) {
@@ -14,19 +14,43 @@ const LinkIcon = ({ type }: { type: string }) => {
   }
 };
 
+const ProjectIcon = ({ icon }: { icon: ProjectIcon }) => {
+  if (icon.type === "image") {
+    return (
+      <img
+        src={icon.src}
+        alt={icon.alt ?? ""}
+        className="size-full object-cover rounded-2xl"
+      />
+    );
+  }
+  return <span className="text-3xl">{icon.value}</span>;
+};
+
 export default function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="relative w-full rounded-2xl bg-linear-to-br from-slate-50 to-blue-50 border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
       <div className="p-6 sm:p-8 flex flex-col gap-8">
         {/* Header */}
         <header className="flex gap-4 items-start">
-          <div
+          {/* <div
             className="shrink-0 size-16 rounded-2xl flex items-center justify-center text-3xl shadow-inner"
             style={{
               backgroundImage: `linear-gradient(135deg, ${project.colors.from}, ${project.colors.to})`,
             }}
           >
             {project.emoji}
+          </div> */}
+          <div
+            className="shrink-0 size-16 rounded-2xl flex items-center justify-center shadow-inner overflow-hidden"
+            style={{
+              backgroundImage:
+                project.emoji.type === "emoji"
+                  ? `linear-gradient(135deg, ${project.colors.from}, ${project.colors.to})`
+                  : undefined,
+            }}
+          >
+            <ProjectIcon icon={project.emoji} />
           </div>
           <div className="space-y-2">
             <h3 className="text-2xl font-bold text-slate-900 tracking-tight">
@@ -82,8 +106,17 @@ export default function ProjectCard({ project }: { project: Project }) {
                   {item.title}
                 </p>
                 <p className="text-sm text-slate-600 leading-relaxed">
-                  • {item.detail}
+                  {Array.isArray(item.detail)
+                    ? item.detail.map((line, i) => (
+                        <span key={i} className="block">
+                          • {line}
+                        </span>
+                      ))
+                    : `• ${item.detail}`}
                 </p>
+                {/* <p className="text-sm text-slate-600 leading-relaxed">
+                  • {item.detail}
+                </p> */}
               </div>
             ))}
           </div>

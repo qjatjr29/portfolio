@@ -13,6 +13,19 @@ export interface AwardItem {
 
 export const AWARDS: AwardItem[] = [
   {
+    id: "ttalkkakthon",
+    date: "2026.03.28",
+    title: "딸깍톤 (바이브코딩 해커톤) 3위",
+    type: "award",
+    descriptions: [
+      "주어진 시간(3시간 반)동안 바이브코딩으로만 진행한 해커톤",
+      "온라인 반성문 웹 서비스",
+    ],
+    link: {
+      url: "https://im-so-sorry.kro.kr/",
+    },
+  },
+  {
     id: "sqld",
     date: "2025.04",
     title: "SQLD(SQL 개발자) 자격증 취득",
